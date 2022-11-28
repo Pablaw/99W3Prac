@@ -48,7 +48,7 @@ const App = () => {
         style={{ backgroundColor: "#0e1116", color: "white" }}
         className="titleDiv"
       >
-        <div>My Todo List</div> <div>React with Vercel</div>
+        <div>My Todo List</div> <div>React</div>
       </div>
       <div className="ipuntDiv">
         <div className="inputGroup">
