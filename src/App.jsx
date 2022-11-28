@@ -10,7 +10,7 @@ const App = () => {
 
   const addTodoHandler = () => {
     const newTodo = {
-      id: todos.length + 1,
+      id: new Date().getTime(),
       title: title,
       body: body,
       isDone: false,
@@ -74,7 +74,7 @@ const App = () => {
         </CustomButton>
       </div>
       <h2 className="working-list-title">Working..🔥</h2>
-      <div className="working-list">
+      <div className="todo-list working-list">
         {todos.map((todo) => {
           return todo.isDone ? null : (
             <TodoCard
@@ -87,7 +87,7 @@ const App = () => {
         })}
       </div>
       <h2 className="done-list-title">Done..!🎉</h2>
-      <div className="done-list">
+      <div className="todo-list done-list">
         {todos.map((todo) => {
           return todo.isDone ? (
             <TodoCard
