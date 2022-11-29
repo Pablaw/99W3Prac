@@ -1,71 +1,15 @@
-# Getting Started with Create React App
+## 99W3Prac
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Todo 리스트 만들기 (항해99 3주차 리액트 입문 주차 과제)
 
-## Available Scripts
+1. 3개의 온클릭 버튼
+   ToDo 리스트 페이지에서 온클릭 기능 동작만을 위한 버튼이 3개 존재합니다.
+   같은 이벤트 기능이 재사용되는 버튼을 재사용을 목적으로 컴포넌트로 만들었습니다.
+   이 때 각 버튼의 용도에 맞게 handler 함수를 만들어서 props로 전달해서 각 버튼에 맞는 함수 기능을 구현했습니다.
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# 99W3Prac
+2. ToDo 리스트 카드
+   ToDo 리스트 페이지에서 제목과 내용을 입력하게 되면 같은 모양의 Todo카드가 반복해서 생성되는 구조입니다.
+   같은 모양의 카드가 페이지에 반복해서 생성되기 때문에 컴포넌트를 만들었습니다.
+   인풋창에서 입력된 Todo의 제목과 내용을 props로 전달받아서 카드의 내용을 구성합니다.
+   이 때 온클릭 이벤트 기능의 버튼도 함께 구성되어야 하기 때문에 컴포넌트로 만든 버튼도 카드 컴포넌트 파일에
+   임포트해서 구성했습니다.

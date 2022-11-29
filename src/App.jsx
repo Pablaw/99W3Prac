@@ -41,6 +41,20 @@ const App = () => {
       )
     );
   };
+  // redux => 덕스 구조, StyledComponent requery, recoil
+  // props 타입, props default
+  // useEffect, useCallback, useLayoutEffect, useMemo, useRef
+  // readme => button 시선을 끌도록, 나눈 이유 설명
+
+  // console unmounting과 mountiong
+  // mvc 패턴 => UI(컴포넌트), 기능(App.jsx) 분리
+
+  /* 클릭시 모달형식(state)으로 띄어보기 position: absolute; */
+
+  /* 예정 - 제목, 내용, 우선순위 / 완료 1. 우선순위 2. 겹칠경우 제목 가나다라 순서 */
+
+  /* SPA 장점 */
+  /* 6번 SPA, MPA */
 
   return (
     <div className="layout">
