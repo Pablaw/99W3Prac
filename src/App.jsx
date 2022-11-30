@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import "./App.css";
 import CustomButton from "./components/CustomButton";
 import TodoCard from "./components/TodoCard";
+import Modal from "./components/Modal";
 
 const App = () => {
   const [todos, setTodos] = useState([]);
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
+  const [modal, setModal] = useState({});
+
+  const toDoModalHandler = (props) => {
+    const { title, body } = props;
+    setModal({ title, body, clicked: true });
+  };
 
   const addTodoHandler = () => {
     const newTodo = {
@@ -43,6 +50,7 @@ const App = () => {
   };
   return (
     <div className="layout">
+      {modal.clicked ? <Modal modal={modal} setModal={setModal} /> : null}
       <div
         style={{ backgroundColor: "#0e1116", color: "white" }}
         className="titleDiv"
@@ -83,6 +91,7 @@ const App = () => {
               handleDelete={deleteTodoHandler}
               todo={todo}
               key={todo.id}
+              handleModal={toDoModalHandler}
             ></TodoCard>
           );
         })}
@@ -96,6 +105,7 @@ const App = () => {
               handleDelete={deleteTodoHandler}
               todo={todo}
               key={todo.id}
+              handleModal={toDoModalHandler}
             ></TodoCard>
           ) : null;
         })}

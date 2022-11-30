@@ -3,6 +3,38 @@
   max-width: 1200px;
   min-width: 800px;
 }
+.todoModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 15px 30px 30px;
+  width: 270px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.modal_cancle_btn {
+  margin: 0 90%;
+  width: 19px;
+  border: 4px solid rgb(169, 156, 156);
+  color: rgb(169, 156, 156);
+  text-align: center;
+  font-weight: 900;
+  border-radius: 100px;
+  cursor: pointer;
+}
 .titleDiv {
   align-items: center;
   border: 1px solid #ddd;
@@ -49,13 +81,17 @@
   flex-wrap: wrap;
   gap: 12px;
 }
-
 .todo-card {
   border: 2px solid #fff;
   border-radius: 12px;
   padding: 12px 24px 24px;
   width: 270px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.todo_modalClickBtn {
+  font-size: 1.2em;
+  width: 25px;
+  margin: 0 95%;
 }
 .btn-set {
   display: flex;
