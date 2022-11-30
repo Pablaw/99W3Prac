@@ -41,21 +41,6 @@ const App = () => {
       )
     );
   };
-  // redux => 덕스 구조, StyledComponent requery, recoil
-  // props 타입, props default
-  // useEffect, useCallback, useLayoutEffect, useMemo, useRef
-  // readme => button 시선을 끌도록, 나눈 이유 설명
-
-  // console unmounting과 mountiong
-  // mvc 패턴 => UI(컴포넌트), 기능(App.jsx) 분리
-
-  /* 클릭시 모달형식(state)으로 띄어보기 position: absolute; */
-
-  /* 예정 - 제목, 내용, 우선순위 / 완료 1. 우선순위 2. 겹칠경우 제목 가나다라 순서 */
-
-  /* SPA 장점 */
-  /* 6번 SPA, MPA */
-
   return (
     <div className="layout">
       <div
@@ -68,6 +53,7 @@ const App = () => {
         <div className="inputGroup">
           <label className="form-label">{"제목"}</label>
           <input
+            maxLength={30}
             className="add-input"
             value={title}
             // 인풋 이벤트로 들어온 입력 값을 name의 값으로 업데이트
@@ -76,6 +62,7 @@ const App = () => {
 
           <label className="form-label">{"내용"}</label>
           <input
+            maxLength={35}
             className="add-input"
             value={body}
             // 인풋 이벤트로 들어온 입력 값을 age의 값으로 업데이트

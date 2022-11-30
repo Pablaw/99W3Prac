@@ -3,8 +3,8 @@ import CustomButton from "./CustomButton";
 const TodoCard = (props) => {
   return (
     <div className="todo-card" key={props.todo.id}>
-      <h3>{props.todo.title}</h3>
-      <div>{props.todo.body}</div>
+      <h3 style={{ wordWrap: "break-word" }}>{props.todo.title}</h3>
+      <div style={{ wordWrap: "break-word" }}>{props.todo.body}</div>
       <div className="btn-set">
         <CustomButton
           color="#d64553"
